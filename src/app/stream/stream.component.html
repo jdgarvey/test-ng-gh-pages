@@ -1,0 +1,10 @@
+<h1 class="mat-dialog-title" mat-dialog-title="" id="mat-dialog-title-2">{{data.stream.game}}</h1>
+<mat-chip-list>
+  <mat-chip color="primary"><small>Viewers: </small>{{data.stream.viewers}}</mat-chip>
+  <mat-chip color="accent"><small>FPS: </small>{{data.stream.average_fps}}</mat-chip>
+  <mat-chip><small>Delay: </small>{{data.stream.delay}}</mat-chip>
+  <mat-chip><small>Type: </small>{{data.stream.stream_type}}</mat-chip>
+</mat-chip-list>
+<div [style.margin-top]="'10px'" class="mat-dialog-content" mat-dialog-content="">
+  <img [src]="data.stream.preview.large" alt="">
+</div>
